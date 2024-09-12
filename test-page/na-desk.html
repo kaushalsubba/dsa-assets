@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://dsa-2024.netlify.app/assets/css/mockups/landing.css" type="text/css">
   <link rel="stylesheet" href="https://dsa-2024.netlify.app/assets/css/mockups/na-desk.css" type="text/css">
   <title>Dezan Shira &amp; Associates!</title>
+  <style>
+    /* .c-tab__content__item.c-tab--active .c-tab__content__inner{display: block !important;opacity:1 !important;} */
+  </style>
 </head>
 <body>
   <div id="wrapper">
@@ -323,7 +326,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>1. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -341,7 +344,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>2. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -359,7 +362,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>3. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -377,7 +380,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>4. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -402,7 +405,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>5. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -420,7 +423,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>6. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -438,7 +441,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>7. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -456,7 +459,7 @@
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
                       <ul> 
-                        <li>FDI Attraction:
+                        <li>8. FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -1135,7 +1138,9 @@
         </div>
         <div class="cta-contact__bot">
           <div class="cta-contact__form">
-            <p>Mini Subscription form here</p>
+            <p>Mini Subscription form here
+
+            </p>
           </div>
         </div>
       </div>
@@ -1262,149 +1267,67 @@
       
     </script>
     <script>
-      (function() {
-      const tabLink = document.querySelectorAll('.c-tab__menu__item');
-      const tabContent = document.querySelectorAll('.c-tab__content__item');
+      
+      // Advantage Tab Active
+      const growthTabLink = document.querySelectorAll('.c-tab__menu__item');
+      const growthTabContent = document.querySelectorAll('.c-tab__content__item');
       const tabContentInner = document.querySelectorAll('.c-tab__content__inner');
-      let currentTabIndex = 0;
-      let autoChangeInterval;
-      function changeTab(index) {
-      clearActive(tabLink);
-      clearActive(tabContent);
-      tabLink[index].classList.add('c-tab--active');
-      tabContent[index].classList.add('c-tab--active');
-      fadeIn(tabContentInner[index]);
-      }
-      function startAutoChange() {
-      if (window.innerWidth < 768) {
-      return;
-      }
-      autoChangeInterval = setInterval(() => {
-      currentTabIndex = (currentTabIndex + 1) % tabLink.length;
-      fadeOutAndIn();
-      }, 4000);
-      }
-      function fadeOutAndIn() {
-      fadeOut(tabContentInner[currentTabIndex]);
-      setTimeout(() => {
-      changeTab(currentTabIndex);
-      }, 500);
-      }
-      function fadeIn(element) {
-      element.style.opacity = 0;
-      element.style.display = 'block';
-      setTimeout(() => {
-      element.style.opacity = 1;
-      }, 50);
-      }
-      function fadeOut(element) {
-      element.style.opacity = 1;
-      setTimeout(() => {
-      element.style.opacity = 0;
-      element.style.display = 'none';
-      }, 500);
-      }
-      function getContentIndex(content) {
-      for (let i = 0; i < content.length; i++) {
-      if (content[i].classList.contains("c-tab--active")) {
-      return content[i].dataset.index;
-      }
-      }
-      }
-      function addClassToContent(index, content, myclass) {
-      for (let i = 0; i < content.length; i++) {
-      if (content[i].dataset.index == index) {
-      content[i].classList.add(myclass);
-      }
-      }
-      }
-      function clearActive(tags) {
-      tags.forEach(tag => tag.classList.remove("c-tab--active"));
-      }
-      // Set the first tab and content as active during page load
-      changeTab(currentTabIndex);
-      tabLink.forEach(link => {
-      link.addEventListener('mouseenter', function () {
-      clearInterval(autoChangeInterval);
-      let tabLinkIndex = this.dataset.index;
-      let tabContentIndex = getContentIndex(tabContent);
-      if (tabLinkIndex !== tabContentIndex) {
-      clearActive(tabLink);
-      clearActive(tabContent);
-      this.classList.add('c-tab--active');
-      addClassToContent(tabLinkIndex, tabContent, 'c-tab--active');
-      fadeIn(tabContentInner[tabLinkIndex]);
-      }
-      });
-      link.addEventListener('click', function (e) {
-      e.preventDefault();
-      });
-      });
-      tabContentInner.forEach(contentInner => {
-      contentInner.addEventListener('mouseenter', function () {
-      clearInterval(autoChangeInterval);
-      });
-      contentInner.addEventListener('mouseleave', function () {
-      autoChangeInterval = setInterval(() => {
-      currentTabIndex = (currentTabIndex + 1) % tabLink.length;
-      fadeOutAndIn();
-      }, 4000);
-      });
-      });
-      // Start automatic tab change
-      startAutoChange();
-      document.addEventListener('DOMContentLoaded', function () {
-      if (document.querySelector('.c-tab--vertical') !== null) {
-      const tabLink = document.querySelectorAll('.c-tab__menu__item');
-      const tabItem = document.querySelectorAll('.c-tab__content__item');
-      function changeTab(e) {
-      e.preventDefault();
-      let tabParent = this.parentElement;
-      if (!tabParent.classList.contains('c-tab--active')) {
-      tabItem.forEach(item => {
-      item.classList.remove("c-tab--active");
-      // Hide all content when changing tabs
-      item.querySelector('.c-tab__content__inner').style.opacity = 0;
-      item.querySelector('.c-tab__content__inner').style.display = 'none';
-      });
-      tabParent.classList.add('c-tab--active');
-      // Show content for the active tab
-      const activeContent = tabParent.querySelector('.c-tab__content__inner');
-      activeContent.style.opacity = 1;
-      activeContent.style.display = 'block';
-      }
-      }
-      for (let i = 0; i < tabLink.length; i++) {
-      let tabClone = tabLink[i].cloneNode(true);
-      tabClone.classList.remove('c-tab--active', 'c-tab__menu__item');
-      tabClone.classList.add('c-tab__content__btn');
-      tabClone.addEventListener('click', changeTab);
-      let tabContent = document.querySelector(`.c-tab__content__item[data-index='${i}']`);
-      tabContent.insertAdjacentElement('afterbegin', tabClone);
-      }
-      }
-      });
-      })();
+
+
+            growthTabLink.forEach((item,index)=>{
+              console.log(item);
+              item.addEventListener("mouseenter",function(e){
+                  clearActive(growthTabLink);
+                  clearActive(growthTabContent);
+
+                  this.classList.add("c-tab--active");
+                  if(growthTabContent[index]) {
+                    growthTabContent[index].classList.add("c-tab--active");
+                    fadeIn(growthTabContent[index].querySelector(".c-tab__content__inner"));
+                  }
+                  
+              })
+            });
+            
+            function clearActive(tags) {
+            tags.forEach(tag => tag.classList.remove("c-tab--active"));
+            }
+
+
+            function fadeIn(element) {
+              element.style.opacity = 0;
+              element.style.display = 'block';
+              setTimeout(() => {
+              element.style.opacity = 1;
+              }, 50);
+            }
       
-    </script>
-    <script>
       function openPower(evt, powerGrowth) {
-      var i, powertabcontent, powertablinks;
-      // Hide all tab contents
-      powertabcontent = document.getElementsByClassName("powertabcontent");
-      for (i = 0; i < powertabcontent.length; i++) {
-      powertabcontent[i].style.display = "none";
-      }
-      // Remove the active class from all tab links
-      powertablinks = document.getElementsByClassName("powertablinks");
-      for (i = 0; i < powertablinks.length; i++) {
-      powertablinks[i].className = powertablinks[i].className.replace(" active", "");
-      }
-      // Show the selected tab content
-      document.getElementById(powerGrowth).style.display = "block";
-      
-      // Add the active class to the clicked tab link
-      evt.currentTarget.className += " active";
+        var i, powertabcontent, powertablinks;
+        // Hide all tab contents
+        powertabcontent = document.getElementsByClassName("powertabcontent");
+        for (i = 0; i < powertabcontent.length; i++) {
+        powertabcontent[i].style.display = "none";
+        }
+        // Remove the active class from all tab links
+        powertablinks = document.getElementsByClassName("powertablinks");
+        for (i = 0; i < powertablinks.length; i++) {
+        powertablinks[i].className = powertablinks[i].className.replace(" active", "");
+        }
+        // Show the selected tab content
+        document.getElementById(powerGrowth).style.display = "block";
+        
+        // Add the active class to the clicked tab link
+        evt.currentTarget.className += " active";
+
+        // activate default tab, added by kaushal
+        const growthTabLink = document.querySelectorAll('#'+powerGrowth+' .c-tab__menu__item');
+        const growthTabContent = document.querySelectorAll('#'+powerGrowth+' .c-tab__content__item');
+        if(growthTabContent[0]) {
+          growthTabContent[0].classList.add("c-tab--active");
+          fadeIn(growthTabContent[0].querySelector(".c-tab__content__inner"));
+        }
+        if(growthTabLink[0]) growthTabLink[0].classList.add("c-tab--active")
       }
       // Click the default tab on page load
       document.getElementById("powerdefaultOpen").click();

@@ -10,8 +10,19 @@
   <link rel="stylesheet" href="https://dsa-2024.netlify.app/assets/css/mockups/landing.css" type="text/css">
   <link rel="stylesheet" href="https://dsa-2024.netlify.app/assets/css/mockups/na-desk.css" type="text/css">
   <title>Dezan Shira &amp; Associates!</title>
+
   <style>
-    /* .c-tab__content__item.c-tab--active .c-tab__content__inner{display: block !important;opacity:1 !important;} */
+    .c-tab--active .c-tab__content__inner {
+      opacity: 1 !important;
+      visibility: visible !important; /* Show content when active */
+    }
+
+    @media (min-width: 1024px) {
+      .c-tab__content__inner {
+        display: block;
+        min-height: 400px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -325,26 +336,37 @@
                 <div class="c-tab__content__item c-tab--active" data-index="0">
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
+                      <p>Conflicting, hard-to-find information can hinder decisions and expansion plans. Our on-the-ground experience in Asia empowers organizations to offer accurate, updated data and facts to their state's companies for free  </p>
                       <ul> 
-                        <li>1. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies)</li>
+                        <li>Market or doing business presentations and webinars  </li>
+                        <li>Market / country benchmarking   </li>
+                        <li>Customized reports and guides  </li>
+                        <li>Syndication of <a href="https://www.dezshira.com/services">Asia Briefing content</a></li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Learn More</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="c-tab__content__item" data-index="1">
                   <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
+                    <div class="tab-content-description">
+                      <p>Companies investing in foreign trade shows and missions want to maximize connections and deals. Carefully curated meetings and plans can help Asian market success by opening doors and opportunities   </p>
                       <ul> 
-                        <li>2. FDI Attraction:
+                        <li>B2B matching with potential in-country partners </li>
+                        <li>Scheduling multi-day itineraries with potential customers  </li>
+                        <li>Planning, logistics, and translation support  </li>
+                        <li>Providing supplemental staff support for tradeshows  </li>
+                      </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Learn More</a></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="c-tab__content__item" data-index="2">
+                  <div class="c-tab__content__inner">
+                    <div class="tab-content-description">
+                      <p>Being in-market to attract foreign investment and help companies bring economic success back home is pivotal to your state's growth. Outsourced assistance can help you tap into the new and burgeoning markets of Asia   </p>
+                      <ul> 
+                        <li>FDI Attraction:
                           <ul> 
                             <li>Assessing targeted market sectors</li>
                             <li> Developing sectoral FDI strategies</li>
@@ -355,42 +377,20 @@
                         </li>
                         <li>Market Support (see services for companies)</li>
                       </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="c-tab__content__item" data-index="2">
-                  <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
-                      <ul> 
-                        <li>3. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies) </li>
-                      </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Learn More</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="c-tab__content__item" data-index="3">
                   <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
+                    <div class="tab-content-description">
+                      <p>In the initial stages of creating a presence in a foreign market, having an in-house HR team may not make sense. Engaging a third party to recruit, manage, process payroll, or even employ on your behalf can alleviate market entry risk   </p>
                       <ul> 
-                        <li>4. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies) </li>
+                        <li>Recruitment  </li>
+                        <li>Employer of record (EOR) services  </li>
+                        <li>HR and payroll support </li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Learn More</a></div>
                     </div>
                   </div>
                 </div>
@@ -399,77 +399,65 @@
           </div>
           <div class="powertabcontent" id="powerCorporate">
             <div class="c-tab c-tab--vertical">
-              <div class="c-tab__menu"><a class="c-tab__menu__item c-tab--active" href="#" data-index="4"><span> Business and Market Intelligence</span></a><a class="c-tab__menu__item" href="#" data-index="5"><span> Trade Missions &amp; Trade Shows</span></a><a class="c-tab__menu__item" href="#" data-index="6"><span> In-Market Representation</span></a><a class="c-tab__menu__item" href="#" data-index="7"><span> Overseas Office Staffing Solutions</span></a></div>
+              <div class="c-tab__menu"><a class="c-tab__menu__item c-tab--active" href="#" data-index="4"><span> Unmatched Access to Asia Info </span></a><a class="c-tab__menu__item" href="#" data-index="5"><span> Pre-Market Entry Advisory</span></a><a class="c-tab__menu__item" href="#" data-index="6"><span> Setting Up in Country </span></a><a class="c-tab__menu__item" href="#" data-index="7"><span> Ongoing and Compliance Support </span></a></div>
               <div class="c-tab__content cyber asiaadmin">
                 <div class="c-tab__content__item c-tab--active" data-index="4">
                   <div class="c-tab__content__inner">
                     <div class="tab-content-description"> 
+                      <p>Access an unparalleled database of resources centered on doing business in Asia and covering a broad range of topics such as industry, legal, tax & accounting, HR & payroll and technology across a variety of mediums  </p>
                       <ul> 
-                        <li>5. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies)</li>
+                        <li>Regular economic, regulatory and industry analysis updates on China, Vietnam, India, Singapore, Indonesia and more ASEAN countries     </li>
+                        <li>Free to register and watch on-demand Doing Business-related webinars & seminars   </li>
+                        <li>Topical publications on the business environments </li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Explore our full range of corporate services</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="c-tab__content__item" data-index="5">
                   <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
+                    <div class="tab-content-description">
+                      <p>Conflicting, hard-to-find information can hinder decisions and expansion plans. Business intelligence can shed light on an often-confusing region, providing accurate and updated data and facts to facilitate info-gathering and decision-making   </p>
                       <ul> 
-                        <li>6. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies)</li>
+                        <li>Market research   </li>
+                        <li>Matchmaking  </li>
+                        <li>Supplier vetting  </li>
+                        <li>Supply chain (re)engineneering  </li>
+                        <li>Tailored country benchmarking  </li>
+                        <li>Location analysis  </li>
+                        <li>Tax advisory  </li>
+                        <li>IP protection services  </li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Explore our full range of corporate services </a></div>
                     </div>
                   </div>
                 </div>
                 <div class="c-tab__content__item" data-index="6">
                   <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
+                    <div class="tab-content-description">
+                      <p>Setting up in a new country requires a multi-disciplinary approach to best position your company right from the start. Our full suite of services aims to do just that, from company formation and tax structuring to assisting you in hiring your first employees  </p>
                       <ul> 
-                        <li>7. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies)</li>
+                        <li>Entry advisory  </li>
+                        <li>Legal entity set up  </li>
+                        <li>Recruitment and Employer on Record (EoR) services  </li>
+                        <li>Employee mobility and visas </li>
+                        <li>Corporate and tax structuring </li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Explore our full range of corporate services</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="c-tab__content__item" data-index="7">
                   <div class="c-tab__content__inner">
-                    <div class="tab-content-description"> 
+                    <div class="tab-content-description">
+                      <p>Remaining compliant in your new market is critical to ensure long-term, sustainable success. Our professional teams can meet your yearly compliance requirements and assist with your continued growth </p>
                       <ul> 
-                        <li>8. FDI Attraction:
-                          <ul> 
-                            <li>Assessing targeted market sectors</li>
-                            <li> Developing sectoral FDI strategies</li>
-                            <li> Identifying potential investors</li>
-                            <li> Participating in international investment forums</li>
-                            <li> Organizing investor visits to the client's community</li>
-                          </ul>
-                        </li>
-                        <li>Market Support (see services for companies)</li>
+                        <li>Accounting and tax compliance </li>
+                        <li> HR and payroll</li>
+                        <li> IT set up, implementation, and help desk </li>
+                        <li> Audit and due diligence </li>
                       </ul>
+                      <div class="btn-cta-link mt-2"><a href="https://www.dezshira.com/services?q=/services/&amp;">Explore our full range of corporate services </a></div>
                     </div>
                   </div>
                 </div>
@@ -584,49 +572,49 @@
             <path d="M243.145 58.0881C242.631 58.3905 241.783 58.6324 240.844 58.6324C239.005 58.6324 238.195 57.385 238.195 55.8428C238.195 53.7488 239.747 51.375 241.995 51.375C243.319 51.375 244.039 52.1612 244.039 53.1591C244.039 54.981 241.98 55.4724 239.406 55.427C239.346 55.7294 239.391 56.372 239.55 56.75C239.823 57.3699 240.383 57.6874 241.102 57.6874C241.919 57.6874 242.54 57.4304 242.971 57.196L243.145 58.0881ZM241.821 52.32C240.685 52.32 239.838 53.4237 239.55 54.5199C241.42 54.535 242.888 54.2931 242.888 53.212C242.888 52.6375 242.457 52.32 241.821 52.32Z" fill="#231F20"></path>
             <path d="M244.641 58.4966L245.488 54.0136C245.662 53.1064 245.776 52.1917 245.852 51.5416H246.904C246.843 52.033 246.79 52.5168 246.715 53.046H246.76C247.207 52.101 247.956 51.3828 248.887 51.3828C248.985 51.3828 249.129 51.3979 249.22 51.4131L248.993 52.5924C248.917 52.5773 248.804 52.5621 248.675 52.5621C247.638 52.5621 246.722 53.8095 246.419 55.4349L245.844 58.4966H244.648H244.641Z" fill="#231F20"></path>
             <path d="M249.267 57.287C249.6 57.4911 250.205 57.7179 250.766 57.7179C251.568 57.7179 252.09 57.2038 252.09 56.5839C252.09 56.0396 251.848 55.707 251.129 55.3063C250.327 54.8603 249.88 54.2404 249.88 53.5374C249.88 52.3127 250.932 51.3828 252.393 51.3828C253.029 51.3828 253.589 51.5567 253.846 51.7306L253.513 52.6377C253.271 52.4941 252.824 52.3202 252.302 52.3202C251.583 52.3202 251.068 52.7663 251.068 53.371C251.068 53.8775 251.401 54.1875 252.014 54.5352C252.794 54.9813 253.324 55.5861 253.324 56.3572C253.324 57.8238 252.128 58.6402 250.667 58.6402C249.918 58.6402 249.259 58.4134 248.941 58.1639L249.274 57.287H249.267Z" fill="#231F20"></path>
-            <path class="circle tooltip-path" d="M335.343 210.966C337.107 210.966 338.537 209.538 338.537 207.776C338.537 206.014 337.107 204.586 335.343 204.586C333.578 204.586 332.148 206.014 332.148 207.776C332.148 209.538 333.578 210.966 335.343 210.966Z" fill="#2D73B6" data-tooltip="Delhi" data-link="https://www.dezshira.com/office/india/delhi.html"></path>
-            <path class="circle tooltip-path" d="M338.546 334.068C340.31 334.068 341.74 332.64 341.74 330.878C341.74 329.116 340.31 327.688 338.546 327.688C336.782 327.688 335.352 329.116 335.352 330.878C335.352 332.64 336.782 334.068 338.546 334.068Z" fill="#2D73B6" data-tooltip="Bengaluru" data-link="https://www.dezshira.com/office/india/bengaluru.html"></path>
-            <path class="circle tooltip-path" d="M530.077 265.052C531.841 265.052 533.271 263.624 533.271 261.862C533.271 260.1 531.841 258.672 530.077 258.672C528.313 258.672 526.883 260.1 526.883 261.862C526.883 263.624 528.313 265.052 530.077 265.052Z" fill="#2D73B6" data-tooltip="Hanoi" data-link="https://www.dezshira.com/office/vietnam/hanoi.html"></path>
-            <path class="circle tooltip-path" d="M635.151 154.537C636.915 154.537 638.345 153.108 638.345 151.346C638.345 149.585 636.915 148.156 635.151 148.156C633.387 148.156 631.957 149.585 631.957 151.346C631.957 153.108 633.387 154.537 635.151 154.537Z" fill="#2D73B6" data-tooltip="Qingdao" data-link="https://www.dezshira.com/office/china/qingdao.html"></path>
-            <path class="circle tooltip-path" d="M646.132 126.841C647.896 126.841 649.326 125.413 649.326 123.651C649.326 121.889 647.896 120.461 646.132 120.461C644.368 120.461 642.938 121.889 642.938 123.651C642.938 125.413 644.368 126.841 646.132 126.841Z" fill="#2D73B6" data-tooltip="Dalian" data-link="https://www.dezshira.com/office/china/dalian.html"></path>
-            <path class="circle tooltip-path" d="M617.483 130.146C619.247 130.146 620.677 128.718 620.677 126.956C620.677 125.194 619.247 123.766 617.483 123.766C615.719 123.766 614.289 125.194 614.289 126.956C614.289 128.718 615.719 130.146 617.483 130.146Z" fill="#2D73B6" data-tooltip="Tianjin" data-link="https://www.dezshira.com/office/china/tianjin.html"></path>
-            <path class="circle tooltip-path" d="M612.6 116.224C614.364 116.224 615.794 114.796 615.794 113.034C615.794 111.272 614.364 109.844 612.6 109.844C610.836 109.844 609.406 111.272 609.406 113.034C609.406 114.796 610.836 116.224 612.6 116.224Z" fill="#2D73B6" data-tooltip="Beijing" data-link="https://www.dezshira.com/office/china/beijing.html"></path>
+            <path class="circle tooltip-path" d="M335.343 210.966C337.107 210.966 338.537 209.538 338.537 207.776C338.537 206.014 337.107 204.586 335.343 204.586C333.578 204.586 332.148 206.014 332.148 207.776C332.148 209.538 333.578 210.966 335.343 210.966Z" fill="#2D73B6" data-tooltip="Delhi, India" data-link="https://www.dezshira.com/office/india/delhi.html"></path>
+            <path class="circle tooltip-path" d="M338.546 334.068C340.31 334.068 341.74 332.64 341.74 330.878C341.74 329.116 340.31 327.688 338.546 327.688C336.782 327.688 335.352 329.116 335.352 330.878C335.352 332.64 336.782 334.068 338.546 334.068Z" fill="#2D73B6" data-tooltip="Bengaluru India" data-link="https://www.dezshira.com/office/india/bengaluru.html"></path>
+            <path class="circle tooltip-path" d="M530.077 265.052C531.841 265.052 533.271 263.624 533.271 261.862C533.271 260.1 531.841 258.672 530.077 258.672C528.313 258.672 526.883 260.1 526.883 261.862C526.883 263.624 528.313 265.052 530.077 265.052Z" fill="#2D73B6" data-tooltip="Hanoi, Vietnam" data-link="https://www.dezshira.com/office/vietnam/hanoi.html"></path>
+            <path class="circle tooltip-path" d="M635.151 154.537C636.915 154.537 638.345 153.108 638.345 151.346C638.345 149.585 636.915 148.156 635.151 148.156C633.387 148.156 631.957 149.585 631.957 151.346C631.957 153.108 633.387 154.537 635.151 154.537Z" fill="#2D73B6" data-tooltip="Qingdao, China" data-link="https://www.dezshira.com/office/china/qingdao.html"></path>
+            <path class="circle tooltip-path" d="M646.132 126.841C647.896 126.841 649.326 125.413 649.326 123.651C649.326 121.889 647.896 120.461 646.132 120.461C644.368 120.461 642.938 121.889 642.938 123.651C642.938 125.413 644.368 126.841 646.132 126.841Z" fill="#2D73B6" data-tooltip="Dalian, China" data-link="https://www.dezshira.com/office/china/dalian.html"></path>
+            <path class="circle tooltip-path" d="M617.483 130.146C619.247 130.146 620.677 128.718 620.677 126.956C620.677 125.194 619.247 123.766 617.483 123.766C615.719 123.766 614.289 125.194 614.289 126.956C614.289 128.718 615.719 130.146 617.483 130.146Z" fill="#2D73B6" data-tooltip="Tianjin, China" data-link="https://www.dezshira.com/office/china/tianjin.html"></path>
+            <path class="circle tooltip-path" d="M612.6 116.224C614.364 116.224 615.794 114.796 615.794 113.034C615.794 111.272 614.364 109.844 612.6 109.844C610.836 109.844 609.406 111.272 609.406 113.034C609.406 114.796 610.836 116.224 612.6 116.224Z" fill="#2D73B6" data-tooltip="Beijing, China" data-link="https://www.dezshira.com/office/china/beijing.html"></path>
             <path class="circle tooltip-path" d="M539.964 47.732C541.728 47.732 543.158 46.3037 543.158 44.5418C543.158 42.7799 541.728 41.3516 539.964 41.3516C538.2 41.3516 536.77 42.7799 536.77 44.5418C536.77 46.3037 538.2 47.732 539.964 47.732Z" fill="#2D73B6" data-tooltip="Mongolia" data-link="https://www.dezshira.com/office/ulaanbaatar.html"></path>
-            <path class="circle tooltip-path" d="M643.104 193.537C644.868 193.537 646.298 192.108 646.298 190.346C646.298 188.585 644.868 187.156 643.104 187.156C641.34 187.156 639.91 188.585 639.91 190.346C639.91 192.108 641.34 193.537 643.104 193.537Z" fill="#2D73B6" data-tooltip="Shanghai" data-link="https://www.dezshira.com/office/china/shanghai.html"></path>
-            <path class="circle tooltip-path" d="M634.264 188.748C636.028 188.748 637.459 187.319 637.459 185.557C637.459 183.796 636.028 182.367 634.264 182.367C632.5 182.367 631.07 183.796 631.07 185.557C631.07 187.319 632.5 188.748 634.264 188.748Z" fill="#2D73B6" data-tooltip="Suzhou" data-link="https://www.dezshira.com/office/china/suzhou.html"></path>
-            <path class="circle tooltip-path" d="M631.737 200.701C633.501 200.701 634.931 199.272 634.931 197.511C634.931 195.749 633.501 194.32 631.737 194.32C629.973 194.32 628.543 195.749 628.543 197.511C628.543 199.272 629.973 200.701 631.737 200.701Z" fill="#2D73B6" data-tooltip="Hangzhou" data-link="https://www.dezshira.com/office/china/hangzhou.html"></path>
-            <path class="circle tooltip-path" d="M642.468 205.67C644.232 205.67 645.662 204.241 645.662 202.479C645.662 200.717 644.232 199.289 642.468 199.289C640.704 199.289 639.273 200.717 639.273 202.479C639.273 204.241 640.704 205.67 642.468 205.67Z" fill="#2D73B6" data-tooltip="Ningbo" data-link="https://www.dezshira.com/office/china/ningbo.html"></path>
+            <path class="circle tooltip-path" d="M643.104 193.537C644.868 193.537 646.298 192.108 646.298 190.346C646.298 188.585 644.868 187.156 643.104 187.156C641.34 187.156 639.91 188.585 639.91 190.346C639.91 192.108 641.34 193.537 643.104 193.537Z" fill="#2D73B6" data-tooltip="Shanghai, China" data-link="https://www.dezshira.com/office/china/shanghai.html"></path>
+            <path class="circle tooltip-path" d="M634.264 188.748C636.028 188.748 637.459 187.319 637.459 185.557C637.459 183.796 636.028 182.367 634.264 182.367C632.5 182.367 631.07 183.796 631.07 185.557C631.07 187.319 632.5 188.748 634.264 188.748Z" fill="#2D73B6" data-tooltip="Suzhou, China" data-link="https://www.dezshira.com/office/china/suzhou.html"></path>
+            <path class="circle tooltip-path" d="M631.737 200.701C633.501 200.701 634.931 199.272 634.931 197.511C634.931 195.749 633.501 194.32 631.737 194.32C629.973 194.32 628.543 195.749 628.543 197.511C628.543 199.272 629.973 200.701 631.737 200.701Z" fill="#2D73B6" data-tooltip="Hangzhou, China" data-link="https://www.dezshira.com/office/china/hangzhou.html"></path>
+            <path class="circle tooltip-path" d="M642.468 205.67C644.232 205.67 645.662 204.241 645.662 202.479C645.662 200.717 644.232 199.289 642.468 199.289C640.704 199.289 639.273 200.717 639.273 202.479C639.273 204.241 640.704 205.67 642.468 205.67Z" fill="#2D73B6" data-tooltip="Ningbo, China" data-link="https://www.dezshira.com/office/china/ningbo.html"></path>
             <path class="circle tooltip-path" d="M589.827 263.779C591.591 263.779 593.021 262.351 593.021 260.589C593.021 258.827 591.591 257.398 589.827 257.398C588.063 257.398 586.633 258.827 586.633 260.589C586.633 262.351 588.063 263.779 589.827 263.779Z" fill="#2D73B6" data-tooltip="Hong Kong SAR" data-link="https://www.dezshira.com/office/hong-kong.html"></path>
             <path class="circle tooltip-path" d="M567.878 281.904C569.642 281.904 571.072 280.476 571.072 278.714C571.072 276.952 569.642 275.523 567.878 275.523C566.114 275.523 564.684 276.952 564.684 278.714C564.684 280.476 566.114 281.904 567.878 281.904Z" fill="#2D73B6" data-tooltip="Hong Kong SAR" data-link="https://www.dezshira.com/office/hong-kong.html"></path>
-            <path class="circle tooltip-path" d="M579.956 260.302C581.72 260.302 583.15 258.874 583.15 257.112C583.15 255.35 581.72 253.922 579.956 253.922C578.192 253.922 576.762 255.35 576.762 257.112C576.762 258.874 578.192 260.302 579.956 260.302Z" fill="#2D73B6" data-tooltip="Zhongshan" data-link="https://www.dezshira.com/office/china/zhongshan.html"></path>
-            <path class="circle tooltip-path" d="M580.237 253.138C582.001 253.138 583.431 251.71 583.431 249.948C583.431 248.186 582.001 246.758 580.237 246.758C578.473 246.758 577.043 248.186 577.043 249.948C577.043 251.71 578.473 253.138 580.237 253.138Z" fill="#2D73B6" data-tooltip="Guangzhou" data-link="https://www.dezshira.com/office/china/guangzhou.html"></path>
-            <path class="circle tooltip-path" d="M586.846 250.443C588.611 250.443 590.041 249.015 590.041 247.253C590.041 245.491 588.611 244.062 586.846 244.062C585.082 244.062 583.652 245.491 583.652 247.253C583.652 249.015 585.082 250.443 586.846 250.443Z" fill="#2D73B6" data-tooltip="Shenzhen" data-link="https://www.dezshira.com/office/china/shenzhen.html"></path>
-            <path class="circle tooltip-path" d="M547.714 303.685C549.478 303.685 550.908 302.257 550.908 300.495C550.908 298.733 549.478 297.305 547.714 297.305C545.95 297.305 544.52 298.733 544.52 300.495C544.52 302.257 545.95 303.685 547.714 303.685Z" fill="#2D73B6" data-tooltip="Da Nang" data-link="https://www.dezshira.com/office/vietnam/da-nang.html"></path>
-            <path class="circle tooltip-path" d="M543.936 340.49C545.7 340.49 547.13 339.062 547.13 337.3C547.13 335.538 545.7 334.109 543.936 334.109C542.172 334.109 540.742 335.538 540.742 337.3C540.742 339.062 542.172 340.49 543.936 340.49Z" fill="#2D73B6" data-tooltip="Ho Chi Minh City" data-link="https://www.dezshira.com/office/vietnam/ho-chi-minh-city.html"></path>
+            <path class="circle tooltip-path" d="M579.956 260.302C581.72 260.302 583.15 258.874 583.15 257.112C583.15 255.35 581.72 253.922 579.956 253.922C578.192 253.922 576.762 255.35 576.762 257.112C576.762 258.874 578.192 260.302 579.956 260.302Z" fill="#2D73B6" data-tooltip="Zhongshan, China" data-link="https://www.dezshira.com/office/china/zhongshan.html"></path>
+            <path class="circle tooltip-path" d="M580.237 253.138C582.001 253.138 583.431 251.71 583.431 249.948C583.431 248.186 582.001 246.758 580.237 246.758C578.473 246.758 577.043 248.186 577.043 249.948C577.043 251.71 578.473 253.138 580.237 253.138Z" fill="#2D73B6" data-tooltip="Guangzhou, China" data-link="https://www.dezshira.com/office/china/guangzhou.html"></path>
+            <path class="circle tooltip-path" d="M586.846 250.443C588.611 250.443 590.041 249.015 590.041 247.253C590.041 245.491 588.611 244.062 586.846 244.062C585.082 244.062 583.652 245.491 583.652 247.253C583.652 249.015 585.082 250.443 586.846 250.443Z" fill="#2D73B6" data-tooltip="Shenzhen, China" data-link="https://www.dezshira.com/office/china/shenzhen.html"></path>
+            <path class="circle tooltip-path" d="M547.714 303.685C549.478 303.685 550.908 302.257 550.908 300.495C550.908 298.733 549.478 297.305 547.714 297.305C545.95 297.305 544.52 298.733 544.52 300.495C544.52 302.257 545.95 303.685 547.714 303.685Z" fill="#2D73B6" data-tooltip="Da Nang, Vietnam" data-link="https://www.dezshira.com/office/vietnam/da-nang.html"></path>
+            <path class="circle tooltip-path" d="M543.936 340.49C545.7 340.49 547.13 339.062 547.13 337.3C547.13 335.538 545.7 334.109 543.936 334.109C542.172 334.109 540.742 335.538 540.742 337.3C540.742 339.062 542.172 340.49 543.936 340.49Z" fill="#2D73B6" data-tooltip="Ho Chi Minh City, Vietnam" data-link="https://www.dezshira.com/office/vietnam/ho-chi-minh-city.html"></path>
             <path class="circle tooltip-path" d="M521.737 409.123C523.501 409.123 524.931 407.694 524.931 405.932C524.931 404.171 523.501 402.742 521.737 402.742C519.973 402.742 518.543 404.171 518.543 405.932C518.543 407.694 519.973 409.123 521.737 409.123Z" fill="#2D73B6" data-tooltip="Singapore" data-link="https://www.dezshira.com/office/singapore.html"></path>
             <path class="circle tooltip-path" d="M549.483 465.865C551.247 465.865 552.677 464.437 552.677 462.675C552.677 460.913 551.247 459.484 549.483 459.484C547.719 459.484 546.289 460.913 546.289 462.675C546.289 464.437 547.719 465.865 549.483 465.865Z" fill="#2D73B6" data-tooltip="Indonesia" data-link="https://www.dezshira.com/office/indonesia/jakarta.html"></path>
-            <path class="circle tooltip-path" d="M307.089 296.982C308.853 296.982 310.283 295.554 310.283 293.792C310.283 292.03 308.853 290.602 307.089 290.602C305.325 290.602 303.895 292.03 303.895 293.792C303.895 295.554 305.325 296.982 307.089 296.982Z" fill="#2D73B6" data-tooltip="Mumbai" data-link="https://www.dezshira.com/office/india/mumbai.html"></path>
+            <path class="circle tooltip-path" d="M307.089 296.982C308.853 296.982 310.283 295.554 310.283 293.792C310.283 292.03 308.853 290.602 307.089 290.602C305.325 290.602 303.895 292.03 303.895 293.792C303.895 295.554 305.325 296.982 307.089 296.982Z" fill="#2D73B6" data-tooltip="Mumbai, India" data-link="https://www.dezshira.com/office/india/mumbai.html"></path>
             <path class="circle tooltip-path" d="M176.464 249.146C178.228 249.146 179.658 247.718 179.658 245.956C179.658 244.194 178.228 242.766 176.464 242.766C174.7 242.766 173.27 244.194 173.27 245.956C173.27 247.718 174.7 249.146 176.464 249.146Z" fill="#2D73B6" data-tooltip="United Arab Emirates" data-link="https://www.dezshira.com/office/dubai.html"></path>
             <g filter=""><a href="https://www.dezshira.com/office/bangladesh.html"></a>
               <path class="circle aam tooltip-path" d="M422.567 246.479C424.03 246.479 425.216 245.295 425.216 243.833C425.216 242.372 424.03 241.188 422.567 241.188C421.104 241.188 419.918 242.372 419.918 243.833C419.918 245.295 421.104 246.479 422.567 246.479Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Bangladesh" data-link="https://www.dezshira.com/office/bangladesh.html"></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M463.606 262.784C465.069 262.784 466.255 261.599 466.255 260.138C466.255 258.677 465.069 257.492 463.606 257.492C462.143 257.492 460.957 258.677 460.957 260.138C460.957 261.599 462.143 262.784 463.606 262.784Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Myanmar" data-link="https://www.dezshira.com/office/myanmar.html"></path>
+              <path class="circle aam tooltip-path" d="M463.606 262.784C465.069 262.784 466.255 261.599 466.255 260.138C466.255 258.677 465.069 257.492 463.606 257.492C462.143 257.492 460.957 258.677 460.957 260.138C460.957 261.599 462.143 262.784 463.606 262.784Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Myanmar" data-link=""></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M378.926 216.472C380.39 216.472 381.576 215.287 381.576 213.826C381.576 212.364 380.39 211.18 378.926 211.18C377.463 211.18 376.277 212.364 376.277 213.826C376.277 215.287 377.463 216.472 378.926 216.472Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Nepal" data-link="https://www.dezshira.com/office-Nepal"></path>
+              <path class="circle aam tooltip-path" d="M378.926 216.472C380.39 216.472 381.576 215.287 381.576 213.826C381.576 212.364 380.39 211.18 378.926 211.18C377.463 211.18 376.277 212.364 376.277 213.826C376.277 215.287 377.463 216.472 378.926 216.472Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Nepal" data-link="https://www.dezshira.com/office/nepal.html"></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M499.493 309.292C500.956 309.292 502.142 308.107 502.142 306.646C502.142 305.185 500.956 304 499.493 304C498.03 304 496.844 305.185 496.844 306.646C496.844 308.107 498.03 309.292 499.493 309.292Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Thailand" data-link="https://www.dezshira.com/office-thailand"></path>
+              <path class="circle aam tooltip-path" d="M499.493 309.292C500.956 309.292 502.142 308.107 502.142 306.646C502.142 305.185 500.956 304 499.493 304C498.03 304 496.844 305.185 496.844 306.646C496.844 308.107 498.03 309.292 499.493 309.292Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Thailand" data-link="https://www.dezshira.com/office/thailand.html"></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M509.794 278.167C511.257 278.167 512.443 276.982 512.443 275.521C512.443 274.06 511.257 272.875 509.794 272.875C508.331 272.875 507.145 274.06 507.145 275.521C507.145 276.982 508.331 278.167 509.794 278.167Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Laos" data-link="https://www.dezshira.com/office-laos"></path>
+              <path class="circle aam tooltip-path" d="M509.794 278.167C511.257 278.167 512.443 276.982 512.443 275.521C512.443 274.06 511.257 272.875 509.794 272.875C508.331 272.875 507.145 274.06 507.145 275.521C507.145 276.982 508.331 278.167 509.794 278.167Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Laos" data-link=""></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M524.114 332.909C525.577 332.909 526.763 331.724 526.763 330.263C526.763 328.802 525.577 327.617 524.114 327.617C522.651 327.617 521.465 328.802 521.465 330.263C521.465 331.724 522.651 332.909 524.114 332.909Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Cambodia" data-link="https://www.dezshira.com/office-cambodia"></path>
+              <path class="circle aam tooltip-path" d="M524.114 332.909C525.577 332.909 526.763 331.724 526.763 330.263C526.763 328.802 525.577 327.617 524.114 327.617C522.651 327.617 521.465 328.802 521.465 330.263C521.465 331.724 522.651 332.909 524.114 332.909Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Cambodia" data-link=""></path>
             </g>
             <g filter="">
-              <path class="circle aam tooltip-path" d="M770.981 153.972C772.444 153.972 773.63 152.787 773.63 151.326C773.63 149.864 772.444 148.68 770.981 148.68C769.518 148.68 768.332 149.864 768.332 151.326C768.332 152.787 769.518 153.972 770.981 153.972Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Japan" data-link="https://www.dezshira.com/office-japan"></path>
+              <path class="circle aam tooltip-path" d="M770.981 153.972C772.444 153.972 773.63 152.787 773.63 151.326C773.63 149.864 772.444 148.68 770.981 148.68C769.518 148.68 768.332 149.864 768.332 151.326C768.332 152.787 769.518 153.972 770.981 153.972Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="Japan" data-link="https://www.dezshira.com/office/tokyo.html"></path>
             </g>
             <g filter="">
               <path class="circle aam tooltip-path" d="M691.137 150.425C692.6 150.425 693.787 149.24 693.787 147.779C693.787 146.317 692.6 145.133 691.137 145.133C689.674 145.133 688.488 146.317 688.488 147.779C688.488 149.24 689.674 150.425 691.137 150.425Z" stroke="#307EBF" stroke-width="2" stroke-miterlimit="10" data-tooltip="South Korea" data-link="https://www.dezshira.com/office/seoul.html"></path>
@@ -977,7 +965,7 @@
             <div class="fbn-block">
               <h3>Featured Business News</h3>
               <ul> 
-                <li> <span class="evnt-date"> <a href="https://www.aseanbriefing.com/">ASEAN Briefing </a>| 30/08/2024 </span><a href="https://www.aseanbriefing.com/news/malaysias-cyber-security-act-2024-what-businesses-need-to-know/">Malaysia's Cyber Security Act 2024: What Businesses Need to Know</a></li>
+                <li> <span class="evnt-date"> <a href="#">ASEAN Briefing </a>| 30/08/2024 </span><a href="https://www.aseanbriefing.com/news/malaysias-cyber-security-act-2024-what-businesses-need-to-know/">Malaysia's Cyber Security Act 2024: What Businesses Need to Know</a></li>
                 <li> <span class="evnt-date"> <a href="https://www.aseanbriefing.com/">ASEAN Briefing </a>| 28/08/2024 </span><a href="https://www.aseanbriefing.com/news/mandatory-e-invoicing-in-malaysia-a-guide-for-businesses/">Mandatory E-invoicing in Malaysia: A Guide for Businesses</a></li>
               </ul>
               <div class="btn-cta-link mt-2"><a href="https://www.aseanbriefing.com/">View all News</a></div>
@@ -1038,55 +1026,44 @@
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Bay area council-logo.png" alt="Bay Area Counci"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/WTCUtah_Logo.png" alt="WTC Utah"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Canada-ASEAN Business Council_logo.jpeg" alt="Canada-ASEAN Business Counci"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Indo-Canadian Business Chamber_logo.png" alt="Indo-Canadian Business Chambe"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/canada_china_business_council_logo.jpeg" alt="Canada- China Business Council (CCBC"></div>
                     </div>
                   </div>
                   <div class="glide__slide">
                     <div class="clients-logos">
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Indo-Canadian Business Chamber_logo.png" alt="Indo-Canadian Business Chambe"></div>
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/canada_china_business_council_logo.jpeg" alt="Canada- China Business Council (CCBC"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/WTCKentucky_logo.png" alt="WTC Kentucky"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/singapore-business-federation-logo.png" alt="Singapore Business Federation"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Vietnam Ministry of Industry and Trade-logo.png" alt="Vietnam Ministry of Industry and Trade"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Italian Trade Agency-logo.png" alt="Italian Trade Agency"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/German Accelerator_logo.png" alt="German Accelerator"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Enterprise Ireland-logo.png" alt="Enterprise Ireland"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Netherlands Embassy-logo.png" alt="Netherlands Embassy"></div>
-                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Switzerland Global Enterprise.png" alt="Switzerland Global Enterprise"></div>
                     </div>
                   </div>
                   <div class="glide__slide">
                     <div class="clients-logos">
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/German Accelerator_logo.png" alt="German Accelerator"></div>
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Enterprise Ireland-logo.png" alt="Enterprise Ireland"></div>
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Netherlands Embassy-logo.png" alt="Netherlands Embassy"></div>
+                      <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Switzerland Global Enterprise.png" alt="Switzerland Global Enterprise"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/enterprise-singapore_logo.png" alt="Enterprise Singapore"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Victoria Government Trade and Investment-logo.png" alt="Victoria Government Trade and Investment"></div>
+                    </div>
+                  </div>
+                  <div class="glide__slide">
+                    <div class="clients-logos">
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/Walloon Agency for Export and Foreign Investment-logo.png" alt="Walloon Agency for Export and Foreign Investment"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/HKTDC_logo.png" alt="HKTDC"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/EU ASEAN Business Council_logo.png" alt="EU-ASEAN Business Council"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/EU Vietnam Business Network_logo.png" alt="EU-Vietnam Business Network"></div>
                       <div class="c-logo"><img src="https://dsa-2024.netlify.app/assets/img/partner-logo/CBBC_logo-no-background.png" alt="China-Britain Business Council"></div>
-                      <!--.c-logoimg(src='https://resource.dezshira.com/Assets/1685505033_Occhio.jpg' alt='occhio' style='width: 60px;')
-                      -->
                     </div>
                   </div>
-                  <!--.glide__slide
-                  .clients-logos
-                    .c-logo
-                      img(src='https://dsa-2021.netlify.app/assets/img/country/fertiglobal.png' alt='fertiglobal')
-                    .c-logo
-                      img(src='https://resource.dezshira.com/Assets/1685894047_Flow Traders Logo.png' alt='flowtraders' style='width:165px;')
-                    .c-logo
-                      img(src='https://dsa-2021.netlify.app/assets/img/country/King_of_Truffles_logo.png' alt='kingoftruffles')
-                    .c-logo
-                      img(src='https://dsa-2021.netlify.app/assets/img/our-clients/cockerill-logo.png' alt='John Cockerill')
-                    .c-logo
-                      img(src='https://dsa-2021.netlify.app/assets/img/our-clients/1685698247_1665201716752.jpg' alt='Marcum Asia')
-                  -->
                 </div>
               </div>
               <div class="glide__bullets" data-glide-el="controls[nav]">
                 <div class="glide__bullet" data-glide-dir="=0">0</div>
                 <div class="glide__bullet" data-glide-dir="=1">1</div>
                 <div class="glide__bullet" data-glide-dir="=2">2</div>
-                <!--.glide__bullet(data-glide-dir='=3') 3-->
+                <div class="glide__bullet" data-glide-dir="=3">3</div>
               </div>
             </div>
           </div>
@@ -1138,9 +1115,44 @@
         </div>
         <div class="cta-contact__bot">
           <div class="cta-contact__form">
-            <p>Mini Subscription form here
-
-            </p>
+            <form id="contact_form" method="post">
+              <div class="cta-contact__fields">
+                <div class="cta-contact__field">
+                  <label class="form-field-label" for="fname">First name</label>
+                  <input id="fname" name="fname" type="text" placeholder=" " required="">
+                </div>
+                <div class="cta-contact__field">
+                  <label class="form-field-label" for="lname">Last name</label>
+                  <input id="lname" name="lname" type="text" placeholder=" " required="">
+                </div>
+                <div class="cta-contact__field">
+                  <label class="form-field-label" for="email_address">Email</label>
+                  <input id="email_address" name="email_address" type="email" placeholder=" " required="">
+                </div>
+                <div class="cta-contact__field">
+                  <label class="form-field-label" for="country">Country</label>
+                  <select id="country" name="country" placeholder="" required="" style="background-color:white;">
+                    <option class="text-muted" value=""></option>
+                    <option value="Belt &amp; Road Initiative">Belt &amp; Road Initiative</option>
+                    <option value="Afghanistan, Islamic State">Afghanistan, Islamic State</option>
+                    <option value="Zimbabwe">Zimbabwe</option>
+                  </select>
+                </div>
+                <div class="cta-contact__field"><img id="siimage" src="https://www.china-briefing.com/showCaptcha" alt="captcha image"><br><a class="btn" id="reload_captcha" title="Reload Code">Reload</a></div>
+                <div class="cta-contact__field">
+                  <label class="form-field-label" for="captcha_code">Security Code</label>
+                  <input id="captcha_code" name="captcha_code" type="text" placeholder=" " required=""><small>The code is case-sensitive </small>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="col-sm col-mb col-lg submit-block-col">
+                  <div class="text-center" id="loading" style="display:none;"> Processing, please wait...</div>
+                  <div class="text-center" id="message"></div>
+                  <button class="btn btn-primary btn-lg float-right" id="submit" type="submit">Subscribe</button>
+                </div>
+              </div>
+              <!-- /grid-->
+            </form>
           </div>
         </div>
       </div>
@@ -1239,35 +1251,44 @@
       const svgPaths = document.querySelectorAll('.tooltip-path');
       let hideTooltipTimeout;
       svgPaths.forEach((path) => {
+      // Show tooltip on mouse enter
       path.addEventListener('mouseenter', (e) => {
       const tooltipText = e.target.getAttribute('data-tooltip');
       const tooltipLink = e.target.getAttribute('data-link');
+      // Set the tooltip content
       tooltip.innerHTML = `<a href="${tooltipLink}" target="_blank">${tooltipText}</a>`;
       tooltip.style.display = 'block';
+      // Move the tooltip to the position of the cursor
       tooltip.style.left = e.pageX + 10 + 'px';
       tooltip.style.top = e.pageY + 10 + 'px';
+      // Clear the timeout if hovering again
       clearTimeout(hideTooltipTimeout);
       });
+      // Move tooltip with the mouse
       path.addEventListener('mousemove', (e) => {
       tooltip.style.left = e.pageX + 10 + 'px';
       tooltip.style.top = e.pageY + 10 + 'px';
       });
+      // Hide tooltip with a delay when the mouse leaves the SVG path
       path.addEventListener('mouseleave', () => {
       hideTooltipTimeout = setTimeout(() => {
       tooltip.style.display = 'none';
-      }, 500);
+      }, 500); // Delay in milliseconds (0.5 seconds)
       });
       });
+      // Keep tooltip visible when mouse is over it
       tooltip.addEventListener('mouseenter', () => {
-      clearTimeout(hideTooltipTimeout); 
+      clearTimeout(hideTooltipTimeout); // Clear the timeout if hovering over tooltip
       });
+      // Hide tooltip when mouse leaves it
       tooltip.addEventListener('mouseleave', () => {
       tooltip.style.display = 'none';
       });
       
     </script>
-    <script>
-      
+
+
+<script>
       // Advantage Tab Active
       const growthTabLink = document.querySelectorAll('.c-tab__menu__item');
       const growthTabContent = document.querySelectorAll('.c-tab__content__item');
@@ -1283,7 +1304,7 @@
                   this.classList.add("c-tab--active");
                   if(growthTabContent[index]) {
                     growthTabContent[index].classList.add("c-tab--active");
-                    fadeIn(growthTabContent[index].querySelector(".c-tab__content__inner"));
+                    // fadeIn(growthTabContent[index].querySelector(".c-tab__content__inner"));
                   }
                   
               })
@@ -1294,13 +1315,13 @@
             }
 
 
-            function fadeIn(element) {
-              element.style.opacity = 0;
-              element.style.display = 'block';
-              setTimeout(() => {
-              element.style.opacity = 1;
-              }, 50);
-            }
+            // function fadeIn(element) {
+            //   element.style.opacity = 0;
+            //   element.style.display = 'block';
+            //   setTimeout(() => {
+            //   element.style.opacity = 1;
+            //   }, 50);
+            // }
       
       function openPower(evt, powerGrowth) {
         var i, powertabcontent, powertablinks;
@@ -1325,16 +1346,17 @@
         const growthTabContent = document.querySelectorAll('#'+powerGrowth+' .c-tab__content__item');
         if(growthTabContent[0]) {
           growthTabContent[0].classList.add("c-tab--active");
-          fadeIn(growthTabContent[0].querySelector(".c-tab__content__inner"));
+          // fadeIn(growthTabContent[0].querySelector(".c-tab__content__inner"));
         }
         if(growthTabLink[0]) growthTabLink[0].classList.add("c-tab--active")
       }
       // Click the default tab on page load
       document.getElementById("powerdefaultOpen").click();
-      
-    </script>
+</script>
+    
     <script>
       document.addEventListener('DOMContentLoaded', function () {
+      
       // Function to initialize the Glide slider
       function initGlide(id) {
       const glideElement = document.querySelector(id);
@@ -1343,9 +1365,15 @@
       type: 'carousel',
       perView: 2,
       gap: 0,
-      autoplay: false // Set true if you want autoplay
+      autoplay: false, // Set true if you want autoplay
+      breakpoints: dPreakpoints,
       }).mount();
       }
+      
+      }
+      const dPreakpoints = {
+      576: {perView: 1},
+      667: {perView: 2},
       }
       // Initialize default tab slider
       initGlide('#rr-glide1');

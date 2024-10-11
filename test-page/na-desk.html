@@ -12,15 +12,22 @@
   <title>Dezan Shira &amp; Associates!</title>
 
   <style>
-    .c-tab--active .c-tab__content__inner {
+    .c-tab__content__item .c-tab__content__inner{
       opacity: 1 !important;
-      visibility: visible !important; /* Show content when active */
+      visibility: visible !important;
+      min-height:0 !important;
+      transition: all 0.5s ease-in-out;
+    }
+    .c-tab__content__item.c-tab--active .c-tab__content__inner {
+      opacity: 1 !important;
+      visibility: visible !important;
+      min-height:100px !important;
     }
 
     @media (min-width: 1024px) {
       .c-tab__content__inner {
-        display: block;
-        min-height: 380px;
+        display: block !important;
+        /* min-height: 380px; */
         padding:0 !important;
       }
     }

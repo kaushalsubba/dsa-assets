@@ -1,2 +1,2 @@
 [images]
-  remote_images = ["https://resource.dezshira.com/Assets/.*"]
+  remote_images = ["https://resource.dezshira.com/Assets/.*","https://www.dezshira.com/.*"]
